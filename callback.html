@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The CallBack Function</title>
+</head>
+<body>
+
+
+		<p id="p1">This is Paragraph</p>
+		<button id="b1" onclick="fun(call)">Click Me</button>
+
+		<p id="p2"></p>
+
+		<script type="text/javascript">
+			
+
+			function fun(callback) {
+				// body...
+
+				document.getElementById('p2').innerHTML="Hello this is callback function"+"<br>";
+				callback();
+			}
+
+			function call() {
+				// body...
+
+				document.getElementById("p2").innerHTML+="I am being called in the function";
+			}
+		</script>
+
+
+
+</body>
+</html>
